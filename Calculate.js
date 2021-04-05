@@ -119,7 +119,7 @@ function Calculate(){
     input = input.replace("×","*");
     input = input.replace("÷","/");  
     var value=eval(input);
-    document.getElementById("result").innerText=value;
+    document.getElementById("result").innerText=value.toFixed(3);
   } catch (err) {
     document.getElementById("result").innerText="Malformed Expression";
   }
