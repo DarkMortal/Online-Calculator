@@ -1,0 +1,183 @@
+body{
+    background: linear-gradient(to bottom right, #33c5ff 0%, #3366ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+@font-face {
+    font-family: "Digital-7";
+    src: url(digital-7.ttf) format("truetype");
+}
+
+.inner{
+    background-color: #203549;
+    font-family: "Digital-7";
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 30em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 5%;
+}
+.upper{
+    width: 100%;
+    background-color: #242b26;
+    height: 30%;
+    color: greenyellow;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#screen{
+    padding: 2%;
+    overflow: hidden;
+    height: 42%;
+    font-size: 170%;
+}
+#result{
+    padding-right: 2%;
+    text-align: right;
+    overflow: hidden;
+    font-size: 170%;
+}
+.btns{
+    width: 100%;
+    height: 100%;
+    padding: 1.32%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.functions{
+    width: 33%;
+    height: 50%;
+    display: block;
+    margin-left: 1.65%;
+}
+.functions button{
+    border-radius: 8px;
+    padding: 6px;
+    width: 25%;
+    height: 25%;
+    font-size: large;
+    outline: none;
+    border: none;
+    background-color: #0fd1ee;
+    color: white;
+    transition-duration: 0.6s;   
+    font-family: sans-serif;
+}
+.functions button:hover{
+    border-radius: 8px;
+    padding: 6px;
+    width: 25%;
+    height: 25%;
+    font-size: large;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: white;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.cf{
+    text-align: center;
+    display: inline-flex; 
+    margin-left: 5%; 
+    margin-right: 5%; 
+    width: 90%; 
+    margin-top: 3%;
+    font-family: sans-serif;
+}
+.cf button{
+    border-radius: 5px;
+    font-size: large;
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 100%;
+    padding: 3px;
+    background-color: orange;
+    color: #203549;
+    margin-right: 4px;
+    font-family: sans-serif;
+    transition-duration: 0.67s;
+}
+.cf button:hover{
+    border-radius: 5px;
+    font-size: large;
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 100%;
+    padding: 3px;
+    background-color: navy;
+    color: white;
+    margin-right: 4px;
+    transition-duration: 0.67s;
+}
+.textbox{
+    background: transparent;  height: 25px;
+    border-color: white; outline: 
+    none; color: white; font-size: 110%;
+    width: 48%;
+    border-top: none; border-left: none; border-right: none;
+}
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+@media screen and (min-width: 640px){
+    #screenwidth{
+        display: none;
+    }
+    #screenwidth2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .inner{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    .inner{
+        display: none;
+    }
+    #screenwidth2{
+        display: none;
+    }
+    #screenwidth{
+        display: block;
+    }
+}
+@media screen and (orientation: portrait){
+    .inner{
+        display: none;
+    }
+    #screenwidth{
+        display: none;
+    }
+    #screenwidth2{
+        display: block;
+    }
+}
+
+#screenwidth{
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+#screenwidth2{
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: larger;
+}

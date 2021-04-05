@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+</head>
+<body>
+    <div id="screenwidth">Please Resize your Browser</div>
+    <div id="screenwidth2">Please Rotate your Device</div>
+    <div class="inner disable-select" id="desktop">
+        <div class="upper">
+            <div id="screen"> 
+            </div><hr color="yellow">
+            <div id="result">
+                0.00
+            </div>
+        </div>
+       <div class="btns">
+         <div class="functions" style="float: left;">
+            <button onclick="sinB()">
+                sin
+            </button>
+            <button onclick="cosB()">
+                cos
+            </button>
+            <button onclick="tanB()">
+                tan
+            </button> <br>
+            <button onclick="sinhB()"> 
+                sinh
+            </button>
+            <button onclick="coshB()">
+                cosh
+            </button>
+            <button onclick="tanhB()"> 
+                tanh
+            </button><br>
+            <button onclick="logB()">
+                log
+            </button>
+            <button onclick="lnB()">
+                ln
+            </button>
+            <button onclick="powB()">
+                x<sup>y</sup>
+            </button><br>
+            <button style="width: 52%;" onclick="expB()">exp</button>
+            <button onclick="PIE()">π</button>
+         </div>
+         <div class="functions" style="float: left;">
+            
+            <button onclick="butt1()">1</button>
+            <button onclick="butt2()">2</button>
+            <button onclick="butt3()">3</button>
+            <button onclick="butt4()">4</button>
+            <button onclick="butt5()">5</button>
+            <button onclick="butt6()">6</button>
+            <button onclick="butt7()">7</button>
+            <button onclick="butt8()">8</button>
+            <button onclick="butt9()">9</button>
+
+            <button style="width: 52%;" onclick='butt0()'>0</button>
+            <button style="background-color: red;" onclick="Calculate()">=</button>
+         </div>
+         <div class="functions" style="float: left; display: inline-flex; width: 28%;">
+         <div class="functions" style="width: 70%; height: 100%;">
+            <button style="width: 48%;" onclick="mod()">
+                %
+            </button>
+            <button style="width: 48%;" onclick="decimal()">
+                .
+            </button> <br>
+            <button style="width: 48%;" onclick="add()">
+                +
+            </button>
+            <button style="width: 48%;" onclick="minus()">
+                _
+            </button> <br>   
+            <button style="width: 48%;" onclick="multiply()">
+               ×
+            </button>
+            <button style="width: 48%;" onclick="divide()">
+                ÷
+            </button><br>
+            <button style="width: 48%;" onclick="bracket_left()">
+                (
+             </button>
+             <button style="width: 48%;" onclick="bracket_right()">
+                )
+             </button>
+         </div>
+         <div class="functions" style="width: 30%; height: 100%;">
+            <button style="width: 100%;" onclick="DEL()">
+                DEL
+            </button> <br>
+            <button style="width: 100%;" onclick="comma()">
+                ,
+             </button><br>
+            <button style="height: 50%; width: 100%; background-color: red;" onclick="CLS()">
+                AC
+            </button>
+          </div> 
+         </div> 
+         <div class="cf">
+            <div style="width: 60%; ">
+            <input type="number" id="num1" placeholder="Enter first Number" class="textbox"> 
+            <input type="number" id="num2" placeholder="Enter second Number" class="textbox"> 
+            </div>
+            <div style="width: 40%; text-align: center; display: inline-flex;"><button onclick="getHCF()">HCF</button> <button onclick="getLCM()">LCM</button></div>
+        </div>
+       </div>
+    </div>
+    <script src="Calculate.js"></script>
+</body>
+</html>
