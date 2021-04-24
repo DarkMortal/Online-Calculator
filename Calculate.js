@@ -101,13 +101,13 @@ function tan(x){
   return Math.sin(x);
 }
 function sinh(x){
-  return Math.sin(x);
+  return Math.sinh(x);
 }
 function cosh(x){
-  return Math.sin(x);
+  return Math.sinh(x);
 }
 function tanh(x){
-  return Math.sin(x);
+  return Math.sinh(x);
 }
 function exp(x){
   return Math.exp(x);
