@@ -15,15 +15,16 @@ body{
     display: block;
     margin: auto;
     width: 70%;
-    height: 30em;
+    height: 30rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 5%;
+    overflow: hidden;
 }
 .upper{
     width: 100%;
     background-color: #242b26;
-    height: 30%;
+    height: 40%;
     color: greenyellow;
     overflow: hidden;
     border-top-left-radius: 15px;
@@ -31,15 +32,16 @@ body{
 }
 #screen{
     padding: 2%;
-    overflow: hidden;
+    overflow: auto;
     height: 42%;
     font-size: 170%;
 }
 #result{
+    /* background-color: red; */
     padding-right: 2%;
     text-align: right;
     overflow: hidden;
-    font-size: 170%;
+    font-size: 200%;
 }
 .btns{
     width: 100%;
@@ -87,7 +89,7 @@ body{
     margin-left: 5%; 
     margin-right: 5%; 
     width: 90%; 
-    margin-top: 3%;
+    margin-top: 1%;
     font-family: sans-serif;
 }
 .cf button{
@@ -144,6 +146,12 @@ body{
 @media screen and (max-width: 950px){
     .inner{
         width: 100%;
+    }
+    .upper{
+        height: 30%;
+    }
+    .cf{
+        margin-top: 4%;
     }
 }
 @media screen and (max-width: 640px){

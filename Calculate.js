@@ -95,7 +95,7 @@ function sin(x){
   return Math.sin(x);
 }
 function cos(x){
-  return Math.sin(x);
+  return Math.cos(x);
 }
 function tan(x){
   return Math.sin(x);
@@ -117,7 +117,8 @@ function Calculate(){
   try {
     var input=document.getElementById("screen").innerText;
     input = input.replace("×","*");
-    input = input.replace("÷","/");  
+    input = input.replace("÷","/"); 
+    input = input.replace("π","Math.PI"); 
     var value=eval(input);
     document.getElementById("result").innerText=value.toFixed(3);
   } catch (err) {
