@@ -41,6 +41,8 @@ function CLS(){
    document.getElementById("result").innerText="0.00";
 }
 
+function inputHelper(x){ document.getElementById("screen").innerText += x; }
+
 function PIE(){ document.getElementById("screen").innerText+="π"; }
 
 function sinB(){ document.getElementById("screen").innerText+="sin("; }
@@ -78,14 +80,15 @@ function butt8(){ document.getElementById("screen").innerText+="8";}
 function butt9(){ document.getElementById("screen").innerText+="9";}
 
 function powB(){ document.getElementById("screen").innerText+="pow(";}
+
 function DEL(){
-  var input=document.getElementById("screen").innerText;
-   var ch=input.charAt(input.length-2);
-   if(ch=='h') input=input.substr(0,input.length-5);
-   else if((ch=='n' && input.charAt(input.length-3)!='l') || ch=='s' || ch=='g' || ch=='p' || ch=='w') input=input.substr(0,input.length-4);
-   else if(ch=='n' && input.charAt(input.length-3)=='l') input=input.substr(0,input.length-3);
-   else input=input.substr(0,input.length-1);
-   document.getElementById("screen").innerText=input;
+    var input=document.getElementById("screen").innerText;
+    var ch=input.charAt(input.length-2);
+    if(ch=='h') input=input.substring(0,input.length-5);
+    else if((ch=='n' && input.charAt(input.length-3)!='l') || ch=='s' || ch=='g' || ch=='p' || ch=='w') input=input.substring(0,input.length-4);
+    else if(ch=='n' && input.charAt(input.length-3)=='l') input=input.substring(0,input.length-3);
+    else input=input.substring(0,input.length-1);
+    document.getElementById("screen").innerText=input;
 }
 
 function pow(a,b){
@@ -116,12 +119,13 @@ function exp(x){
 function Calculate(){
   try {
     var input=document.getElementById("screen").innerText;
-    input = input.replace("×","*");
-    input = input.replace("÷","/"); 
-    input = input.replace("π","Math.PI"); 
-    var value=eval(input);
+    input = input.replaceAll("×","*");
+    input = input.replaceAll("÷","/"); 
+    input = input.replaceAll("π","PI");
+    var value=math.evaluate(input);
     document.getElementById("result").innerText=value.toFixed(3);
   } catch (err) {
+    console.log(input);
     document.getElementById("result").innerText="Malformed Expression";
   }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./js-css/style.css">
+    <script src="./js-css/math.js" type="text/javascript"></script>
     <link rel="shortcut icon" type="image/jpg" href="./resources/icon.png"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,47 +22,47 @@
         </div>
        <div class="btns">
          <div class="functions" style="float: left;">
-            <button onclick="sinB()">
+            <button onclick="inputHelper(`sin(`)">
                 sin
             </button>
-            <button onclick="cosB()">
+            <button onclick="inputHelper(`cos(`)">
                 cos
             </button>
-            <button onclick="tanB()">
+            <button onclick="inputHelper(`tan(`)">
                 tan
             </button> <br>
-            <button onclick="sinhB()"> 
+            <button onclick="inputHelper(`sinh(`)"> 
                 sinh
             </button>
-            <button onclick="coshB()">
+            <button onclick="inputHelper(`cosh(`)">
                 cosh
             </button>
-            <button onclick="tanhB()"> 
+            <button onclick="inputHelper(`tanh(`)"> 
                 tanh
             </button><br>
-            <button onclick="logB()">
+            <button onclick="inputHelper(`log10(`)">
                 log
             </button>
-            <button onclick="lnB()">
+            <button onclick="inputHelper(`log(`)">
                 ln
             </button>
-            <button onclick="powB()">
-                x<sup>y</sup>
+            <button onclick="inputHelper('!')">
+                !
             </button><br>
-            <button style="width: 52%;" onclick="expB()">exp</button>
+            <button style="width: 51.5%;" onclick="inputHelper(`exp(`)">exp</button>
             <button onclick="PIE()">π</button>
          </div>
          <div class="functions" style="float: left;">
             
-            <button onclick="butt1()">1</button>
-            <button onclick="butt2()">2</button>
-            <button onclick="butt3()">3</button>
-            <button onclick="butt4()">4</button>
-            <button onclick="butt5()">5</button>
-            <button onclick="butt6()">6</button>
-            <button onclick="butt7()">7</button>
-            <button onclick="butt8()">8</button>
-            <button onclick="butt9()">9</button>
+            <button onclick="inputHelper('1')">1</button>
+            <button onclick="inputHelper('2')">2</button>
+            <button onclick="inputHelper('3')">3</button>
+            <button onclick="inputHelper('4')">4</button>
+            <button onclick="inputHelper('5')">5</button>
+            <button onclick="inputHelper('6')">6</button>
+            <button onclick="inputHelper('7')">7</button>
+            <button onclick="inputHelper('8')">8</button>
+            <button onclick="inputHelper('9')">9</button>
 
             <button style="width: 52%;" onclick='butt0()'>0</button>
             <button style="background-color: red;" onclick="Calculate()">=</button>
@@ -97,8 +98,8 @@
             <button style="width: 100%;" onclick="DEL()">
                 DEL
             </button> <br>
-            <button style="width: 100%;" onclick="comma()">
-                ,
+            <button style="width: 100%;" onclick="inputHelper('^')">
+                ^
              </button><br>
             <button style="height: 50%; width: 100%; background-color: red;" onclick="CLS()">
                 AC

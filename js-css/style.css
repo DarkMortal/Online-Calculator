@@ -5,16 +5,15 @@ body{
    
 }
 @font-face {
-    font-family: "Digital-7";
-    src: url('../resources/digital-7.ttf') format("truetype");
+    font-family: "Fontspace-Custom";
+    src: url('../resources/SpaceMono-Regular.ttf') format("truetype");
 }
 .inner{
     background-color: #203549;
-    font-family: "Digital-7";
     display: block;
     margin: auto;
-    width: 70%;
-    height: 30rem;
+    width: 80%;
+    height: 31rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 5%;
@@ -22,6 +21,7 @@ body{
 }
 .upper{
     width: 100%;
+    font-family: "Fontspace-Custom";
     background-color: #242b26;
     height: 40%;
     color: greenyellow;
@@ -103,10 +103,10 @@ body{
 }
 .textbox{
     background: transparent;  height: 25px;
-    border-color: white; outline: 
-    none; color: white; font-size: 110%;
-    width: 48%;
-    border-top: none; border-left: none; border-right: none;
+    border-color: white; outline: none;
+    color: white; font-size: 110%;
+    width: 48%; border-top: none;
+    border-left: none; border-right: none;
 }
 .disable-select {
     user-select: none; /* supported by Chrome and Opera */
@@ -136,7 +136,7 @@ body{
         margin-top: 4%;
     }
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 701px){
     .inner{
         display: none;
     }
