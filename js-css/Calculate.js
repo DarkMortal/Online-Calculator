@@ -38,48 +38,10 @@ function toDegree(x){
 
 function CLS(){
    document.getElementById("screen").innerText="";
-   document.getElementById("result").innerText="0.00";
+   document.getElementById("result").innerText="0.000";
 }
 
-function inputHelper(x){ document.getElementById("screen").innerText += x; }
-
-function PIE(){ document.getElementById("screen").innerText+="π"; }
-
-function sinB(){ document.getElementById("screen").innerText+="sin("; }
-function cosB(){ document.getElementById("screen").innerText+="cos("; }
-function tanB(){ document.getElementById("screen").innerText+="tan("; }
-
-function sinhB(){ document.getElementById("screen").innerText+="sinh("; }
-function coshB(){ document.getElementById("screen").innerText+="cosh("; }
-function tanhB(){ document.getElementById("screen").innerText+="tanh("; }
-
-function logB(){ document.getElementById("screen").innerText+="log("; }
-function lnB(){ document.getElementById("screen").innerText+="ln("; }
-function expB(){ document.getElementById("screen").innerText+="exp("; }
-
-function multiply(){ document.getElementById("screen").innerText+="×"; }
-function divide(){ document.getElementById("screen").innerText+="÷"; }
-function add(){ document.getElementById("screen").innerText+="+"; }
-function minus(){ document.getElementById("screen").innerText+="-"; }
-
-function bracket_left(){ document.getElementById("screen").innerText+="("; }
-function bracket_right(){ document.getElementById("screen").innerText+=")"; }
-function comma(){ document.getElementById("screen").innerText+=","; }
-function decimal(){ document.getElementById("screen").innerText+="."; }
-function mod(){ document.getElementById("screen").innerText+="%"; }
-
-function butt0(){ document.getElementById("screen").innerText+="0";}
-function butt1(){ document.getElementById("screen").innerText+="1";}
-function butt2(){ document.getElementById("screen").innerText+="2";}
-function butt3(){ document.getElementById("screen").innerText+="3";}
-function butt4(){ document.getElementById("screen").innerText+="4";}
-function butt5(){ document.getElementById("screen").innerText+="5";}
-function butt6(){ document.getElementById("screen").innerText+="6";}
-function butt7(){ document.getElementById("screen").innerText+="7";}
-function butt8(){ document.getElementById("screen").innerText+="8";}
-function butt9(){ document.getElementById("screen").innerText+="9";}
-
-function powB(){ document.getElementById("screen").innerText+="pow(";}
+function inputHelper(x){ document.getElementById("screen").innerHTML += x; }
 
 function DEL(){
     var input=document.getElementById("screen").innerText;
@@ -89,31 +51,6 @@ function DEL(){
     else if(ch=='n' && input.charAt(input.length-3)=='l') input=input.substring(0,input.length-3);
     else input=input.substring(0,input.length-1);
     document.getElementById("screen").innerText=input;
-}
-
-function pow(a,b){
-   return Math.pow(a,b);
-}
-function sin(x){
-  return Math.sin(x);
-}
-function cos(x){
-  return Math.cos(x);
-}
-function tan(x){
-  return Math.sin(x);
-}
-function sinh(x){
-  return Math.sinh(x);
-}
-function cosh(x){
-  return Math.sinh(x);
-}
-function tanh(x){
-  return Math.sinh(x);
-}
-function exp(x){
-  return Math.exp(x);
 }
 
 function Calculate(){
